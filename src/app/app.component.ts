@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { slideInAnimation } from './route-animation';
-import { HeaderService } from './services/header/header.service';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter, map, switchMap } from 'rxjs/operators';
 
