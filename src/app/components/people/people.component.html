@@ -3,7 +3,7 @@
     <div class="col-sm-4">
         <div class="length-top">Top {{peoples.length}} GitHub User</div>
         <div class="top-username">To the username to see more infomation</div>
-        <div *ngFor="let people of peoples">
+        <div *ngFor="let people of peoples" class="item">
             <a routerLink="users/{{people}}">{{people}}</a>
         </div>
     </div>

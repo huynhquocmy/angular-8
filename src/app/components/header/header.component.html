@@ -1,7 +1,7 @@
 <div class="header">
     <div class="header-wrapper">
-        <div class="icon">
-            <i class="{{icon}}" (click)="goBack()"></i>
+        <div class="icon" (click)="goBack()">
+            <i class="{{icon}}"></i>
             <span *ngIf="icon" class="back">Back</span>
         </div>
         <div class="title-header">{{title}}</div>
