@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeopleComponent implements OnInit {
   peoples;
+  content = 'Home';
   constructor() { }
 
   ngOnInit() {
+    // this.headerService.setTitle('Home');
     this.peoples = ['grahamcampbell', 'fabpot', 'weierophinney', 'rkh', 'josh'];
   }
 
