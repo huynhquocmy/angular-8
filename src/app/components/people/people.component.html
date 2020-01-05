@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="length-top">Top {{peoples.length}} GitHub User</div>
+        <div class="top-username">To the username to see more infomation</div>
+        <div *ngFor="let people of peoples">
+            <a routerLink="users/{{people}}">{{people}}</a>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>

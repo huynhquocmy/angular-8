@@ -1,0 +1,16 @@
+<div class="row align-items-center">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" *ngIf="detail">
+        <div class="item-detail">
+            <div class="block-image">
+                <img src="{{detail.avatar_url}}" alt="#" />
+            </div>
+            <div class="block-content">
+                <div class="name">{{detail.name}}</div>
+                <div class="localtion">{{detail.location}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+

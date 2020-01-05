@@ -1,0 +1,20 @@
+.item-detail {
+    text-align: center;
+    position: relative;
+}
+.block-image {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.block-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 0;
+}

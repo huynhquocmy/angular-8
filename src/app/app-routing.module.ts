@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from './shared/guards/auth.guard';
+import { PeopleComponent } from './components/people/people.component';
+import { PeopleDetailComponent } from './components/people-detail/people-detail.component';
 
 const appRoutes: Routes = [
-  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-    canLoad: [AuthGuard]
-  },
-  { path: '', redirectTo: 'auth', pathMatch: 'full' }
+  { path: '', component: PeopleComponent },
+  { path: 'users/:peopleName', component: PeopleDetailComponent },
 ];
 
 @NgModule({
