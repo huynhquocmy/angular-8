@@ -6,7 +6,7 @@ import { PeopleDetailComponent } from './components/people-detail/people-detail.
 const appRoutes: Routes = [
   { path: '', component: PeopleComponent,  data: {animation: 'PeopleComponent', title: 'Home', icon: ''} },
   // tslint:disable-next-line: max-line-length
-  { path: 'users/:peopleName', component: PeopleDetailComponent,  data: {animation: 'PeopleDetailComponent', title: 'Persons', icon: 'ion-ios-arrow-left'}},
+  { path: 'users/:peopleName', component: PeopleDetailComponent,  data: {animation: 'PeopleDetailComponent', title: 'Person', icon: 'ion-ios-arrow-left'}},
 ];
 
 @NgModule({
